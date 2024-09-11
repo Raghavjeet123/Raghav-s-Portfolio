@@ -11,7 +11,17 @@ jobs:
    - name: Checkout code
      uses: actions/checkout@v4
      
-       
+   - name: Install AWS-CLI
+     uses: chrislennon/action-aws-cli@v1.1
+
+   - name: Configure AWS Credentials
+     uses: aws-actions/configure-aws-credentials@v1
+     with:
+      -region: ap-south-1 
+
+   - name: Deploye To S3
+     run: aws s3 sync  https://github.com/Raghavjeet123/Raghav-s-Portfolio.github/workflows/main.yml .s3//raghav-dev 
+
       
       
  
