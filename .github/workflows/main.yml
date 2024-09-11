@@ -1,0 +1,16 @@
+name: Self-Hosted Runner CI/CD  
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Build: 
+   runs-on: self-hosted
+   steps:
+   - name: Checkout code
+     uses: actions/checkout@v4
+       
+      
+      
+ 
