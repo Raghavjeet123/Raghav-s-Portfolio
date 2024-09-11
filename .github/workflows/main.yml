@@ -21,4 +21,4 @@ jobs:
       -region: ap-south-1 
 
    - name: Deploye To S3
-     run: aws s3 sync  ./github.com/Raghavjeet123/Raghav-s-Portfolio.github/workflows/main.yml .s3//raghav-dev 
+     run: aws s3 sync  ./github.com/Raghavjeet123/Raghav-s-Portfolio .s3//raghav-dev 
